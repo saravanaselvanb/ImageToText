@@ -12,8 +12,7 @@ from crewai_tools import VisionTool
 
 # Load environment variables from a .env file (optional but highly recommended)
 # You would create a .env file in the same directory with:
-os.environ['OPENAI_API_KEY']="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"
-#OPENAI_API_KEY="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"
+#os.environ['OPENAI_API_KEY']=""
 print("Attempting to load OPENAI_API_KEY...")
 print(f"Key successfully loaded: {bool(os.getenv('OPENAI_API_KEY'))}") 
 # After running, this should print "Key successfully loaded: True"
@@ -88,4 +87,5 @@ result = analysis_crew.kickoff()
 print("\n\n################################################################################")
 print("## Final Analysis Result")
 print("################################################################################")
+
 print(result)
